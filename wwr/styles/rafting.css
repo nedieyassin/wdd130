@@ -9,13 +9,11 @@
 
 .inter {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 
@@ -32,14 +30,12 @@ h4,
 h5,
 h6 {
     font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     color: var(--primary-color);
 }
 
 p,a {
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 
