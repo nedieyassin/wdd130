@@ -23,6 +23,39 @@ body {
 }
 
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+    background-color: white;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header nav a {
+    color: var(--primary-color);
+
+}
+
+header nav a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
+}
+
+
+
 h1,
 h2,
 h3,
@@ -34,7 +67,8 @@ h6 {
     color: var(--primary-color);
 }
 
-p,a {
+p,
+a {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
 }
@@ -64,19 +98,19 @@ a {
 }
 
 .hero article {
-  position: absolute;
-  top: 210px;
-  left: 60px;
-  right: 60px;
-  background-color: rgba(38, 86, 148, 0.7);
-  padding: 20px;
-  color: white;
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    right: 60px;
+    background-color: rgba(38, 86, 148, 0.7);
+    padding: 20px;
+    color: white;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero article img {
@@ -90,6 +124,69 @@ a {
 
 
 
-footer nav a img {
-    width: 40px;
+
+.history {
+    padding:  20px 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 10px;
 }
+
+.history .content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.history .content img {
+    width: 300px;
+    height: auto;
+}
+
+
+.adventure {
+    padding:  20px 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 10px;
+}
+
+.adventure .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.adventure .content figure img {
+    width: 360px;
+    height: auto;
+}
+
+.adventure .content figure figcaption {
+   font-size: large;
+   font-family: "Inter", sans-serif;
+   padding: 10px;
+   font-weight: bold;
+}
+
+
+footer nav {
+   display: flex;
+   gap: 20px;
+}
+
+footer nav a img {
+    width: 30px;
+    height: auto;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
