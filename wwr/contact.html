@@ -27,8 +27,9 @@
         </nav>
     </header>
     <main>
-
+        <h1>About Us</h1>
         <section class="company-information">
+            
             <div class="details">
                 <div class="card">
                     <h3>Address:</h3>
@@ -46,56 +47,65 @@
             <div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12588.334518190433!2d33.75321347498653!3d-13.898705867782573!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1729634605049!5m2!1sen!2smw"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         <section class="employees">
             <h2>Our Staffs</h2>
             <div class="content">
-            <figure>
-                <img src="images/employee-1.jpg" alt="">
-                <figcaption>David Banda</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee-2.jpg" alt="">
-                <figcaption>Chisomo Phiri</figcaption>
-            </figure>
-            <figure>
-                <img src="images/employee-3.jpg" alt="">
-                <figcaption>Jawad Yusuf</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/employee-1.jpg" alt="">
+                    <figcaption>David Banda</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-2.jpg" alt="">
+                    <figcaption>Chisomo Phiri</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-3.jpg" alt="">
+                    <figcaption>Jawad Yusuf</figcaption>
+                </figure>
             </div>
         </section>
-        <section class="message-form">
+        <form class="message-form" method="post">
             <h2>Send us a message</h2>
-            <input type="text" name="name" placeholder="Enter your name">
-            <input type="email" name="email" placeholder="Enter your email">
+            <label for="name">
+                Name
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </label>
+            <label for="email">
+                Email
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </label>
             <label for="General-Inquiry">
                 <input type="radio" name="type" id="General-Inquiry">
                 General Inquiry
             </label>
             <label for="Reservation-Question">
-                <input type="radio" name="type"  id="Reservation-Question">
+                <input type="radio" name="type" id="Reservation-Question">
                 Reservation Question
             </label>
             <label for="Website-Suggestion">
-                <input type="radio" name="type"  id="Website-Suggestion">
+                <input type="radio" name="type" id="Website-Suggestion">
                 Website Suggestion
             </label>
-            <textarea name="message" placeholder="Type message here"></textarea>
+            <label for="message">
+                Message
+                <textarea name="message" id="message" placeholder="Type message here"></textarea>
+            </label>
             <label for="subscribe">
-                <input type="checkbox" name="subscribe"  id="subscribe">
+                <input type="checkbox" name="subscribe" id="subscribe">
                 Please subscribe me to the monthly newsletter
             </label>
-            <button>Send message</button>
-        </section>
+            <button type="submit">Send message</button>
+        </form>
     </main>
     <footer>
         <p>&copy; 2024, White Water Rafting, Yassin Nedie</p>
         <nav>
             <a href="https://app.moqups.com/BvFKRXJnhpa6GXakwgYmM33eKPKqJR0b/view/page/ad64222d5">
-               Wireframe
+                Wireframe
             </a>
             <a href="https://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook">

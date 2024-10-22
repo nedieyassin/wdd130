@@ -232,12 +232,13 @@ a {
     padding-top: 100px;
 }
 
-.message-form input,
+.message-form input[type="text"], input[type="email"],
 textarea,
 button {
     padding: 10px 15px;
     border-radius: 5px;
     border: 2px solid lightgray;
+    width: 100%;
 }
 
 
@@ -249,7 +250,9 @@ button {
 }
 
 
-
+iframe{
+    border: 0;
+}
 
 footer nav {
     display: flex;
