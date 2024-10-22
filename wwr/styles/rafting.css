@@ -32,11 +32,11 @@ header {
 }
 
 header nav {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 header img {
@@ -126,10 +126,10 @@ a {
 
 
 .history {
-    padding:  20px 0;
+    padding: 20px 0;
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -146,10 +146,10 @@ a {
 
 
 .adventure {
-    padding:  20px 0;
+    padding: 20px 0;
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -164,16 +164,96 @@ a {
 }
 
 .adventure .content figure figcaption {
-   font-size: large;
-   font-family: "Inter", sans-serif;
-   padding: 10px;
-   font-weight: bold;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.company-information {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-information div {
+    width: 100%;
+}
+
+.company-information .details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.company-information .details h6 {
+    font-size: 1.2rem;
 }
 
 
+
+
+
+.employees {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.employees .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.employees .content figure img {
+    width: 360px;
+    height: auto;
+}
+
+.employees .content figure figcaption {
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    gap: 20px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+.message-form input,
+textarea,
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+
+
+.message-form
+button {
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+
+
 footer nav {
-   display: flex;
-   gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 footer nav a img {
@@ -187,6 +267,3 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-
-
-
