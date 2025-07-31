@@ -1,7 +1,7 @@
 /* https://coolors.co/264653-2a9d8f-e9c46a-f4a261 */
 
 :root {
-    --primary-color: #264653;
+    --primary-color: #1a87b4;
     --secondary-color: #2A9D8F;
     --accent1-color: #E9C46A;
     --accent2-color: #F4A261;
@@ -17,9 +17,49 @@
     font-style: normal;
 }
 
+* {
+    box-sizing: border-box;
+    /*margin: 0;*/
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
 body {
     width: 1260px;
     margin: 0 auto;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+    background-color: white;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header nav a {
+    color: black;
+
+}
+
+header nav a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
 }
 
 
@@ -34,7 +74,8 @@ h6 {
     color: var(--primary-color);
 }
 
-p,a {
+p,
+a {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
 }
@@ -46,6 +87,227 @@ a {
 }
 
 
+/*  */
+
+
+.home-hero {
+    position: relative;
+    width: 100%;
+
+}
+
+.home-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-hero h1 {
+    position: absolute;
+    color: white;
+    padding: 20px;
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.home-hero .content {
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    right: 60px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.home-hero .content p {
+    padding-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.home-hero .content button {
+    padding-right: 40px;
+    padding-left: 40px;
+    width: fit-content;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.newsletter {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+    align-items: center;
+    gap: 30px;
+}
+
+.newsletter .content form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.newsletter .content label input {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    width: 100%;
+}
+
+
+.newsletter .content button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+
+.purpose {
+    width: 100%;
+}
+
+.purpose .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 60px;
+    gap: 30px;
+}
+
+
+.purpose .content figure {
+    margin: 0;
+}
+
+.purpose .content figure img {
+    width: 100%;
+}
+
+.purpose .content p {
+    width: 100%;
+}
+
+
+/*  */
+
+.call-to-action {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.call-to-action img {
+    width: 600px;
+
+}
+
+
+.call-to-action .card h2 {
+    margin: 0;
+
+}
+
+.call-to-action .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: fit-content;
+    padding: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+    margin-left: -200px;
+}
+
+.call-to-action .card a {
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.trips-detail {
+    width: 100%;
+}
+
+.trips-detail .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 30px;
+}
+
+
+.trips-detail .content figure {
+    margin: 0;
+}
+
+.trips-detail .content figure img {
+    width: 100%;
+}
+
+.trips-detail .content p {
+    width: 100%;
+}
+
+.trips {
+    padding-bottom: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+/*  */
 .hero {
     position: relative;
     width: 100%;
@@ -64,19 +326,19 @@ a {
 }
 
 .hero article {
-  position: absolute;
-  top: 210px;
-  left: 60px;
-  right: 60px;
-  background-color: rgba(38, 86, 148, 0.7);
-  padding: 20px;
-  color: white;
+    position: absolute;
+    top: 210px;
+    left: 60px;
+    right: 60px;
+    background-color: rgba(38, 86, 148, 0.7);
+    padding: 20px;
+    color: white;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero article img {
@@ -89,7 +351,145 @@ a {
 }
 
 
+.history {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.history .content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.history .content img {
+    width: 300px;
+    height: auto;
+}
+
+
+.adventure {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.adventure .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.adventure .content figure img {
+    width: 360px;
+    height: auto;
+}
+
+.adventure .content figure figcaption {
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.company-information {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.company-information div {
+    width: 100%;
+}
+
+.company-information .details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.company-information .details h6 {
+    font-size: 1.2rem;
+}
+
+
+.employees {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.employees .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.employees .content figure img {
+    width: 360px;
+    height: auto;
+}
+
+.employees .content figure figcaption {
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.message-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    gap: 20px;
+    padding-bottom: 150px;
+    padding-top: 100px;
+}
+
+.message-form input[type="text"], .message-form input[type="email"],
+textarea,
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    width: 100%;
+}
+
+
+.message-form
+button {
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+iframe {
+    border: 0;
+}
+
+footer nav {
+    display: flex;
+    gap: 20px;
+}
 
 footer nav a img {
-    width: 40px;
+    width: 30px;
+    height: auto;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
